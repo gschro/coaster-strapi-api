@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resorts",
+  "info": {
+    "name": "Resort"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "string"
+    }
+  }
+}
