@@ -11,7 +11,7 @@
  */
 
  if(process.env.NODE_ENV !== 'Production') {
-  const test = require('dotenv').config()
+  require('dotenv').config()
  }
 
 module.exports = () => {};
