@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parks",
+  "info": {
+    "name": "Parks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "resort": {
+      "model": "resort",
+      "via": "parks"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Metro": {
+      "type": "enumeration",
+      "enum": [
+        "DFW"
+      ]
+    },
+    "State": {
+      "type": "enumeration",
+      "enum": [
+        "California",
+        "Colorado",
+        "Indiana",
+        "Kentucky",
+        "Florida",
+        "Ohio",
+        "Pennsylvania",
+        "Michigan",
+        "Missouri",
+        "Texas",
+        "Tennessee",
+        "Utah"
+      ]
+    },
+    "Country": {
+      "type": "enumeration",
+      "enum": [
+        "Canada",
+        "USA"
+      ]
+    },
+    "Airport": {
+      "type": "enumeration",
+      "enum": [
+        "DFW",
+        "LAX"
+      ]
+    },
+    "parent_company": {
+      "model": "company",
+      "via": "parks"
+    },
+    "MilitaryDiscount": {
+      "type": "string"
+    },
+    "SoftDrinkVendor": {
+      "type": "enumeration",
+      "enum": [
+        "CocaCola",
+        "Other",
+        "Pepsi"
+      ]
+    },
+    "OutsideFood": {
+      "type": "boolean"
+    },
+    "Website": {
+      "type": "string"
+    },
+    "ParkMap": {
+      "type": "string"
+    }
+  }
+}

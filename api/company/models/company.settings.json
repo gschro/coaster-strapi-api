@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "resorts",
+  "collectionName": "companies",
   "info": {
-    "name": "Resort"
+    "name": "Company"
   },
   "options": {
     "increments": true,
@@ -12,11 +12,18 @@
     "Name": {
       "type": "string"
     },
-    "Slug": {
+    "Website": {
       "type": "string"
     },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "ParkOperator",
+        "RideManufacturer"
+      ]
+    },
     "parks": {
-      "via": "resort",
+      "via": "parent_company",
       "collection": "parks"
     }
   }
