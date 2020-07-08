@@ -9,9 +9,11 @@
  *
  * See more details here: https://strapi.io/documentation/3.0.0-beta.x/concepts/configurations.html#bootstrap
  */
-
+console.log('HERE"S NODE ENV!!!', process.env.NODE_ENV)
  if(process.env.NODE_ENV !== 'Production') {
+   console.log('trying to require dotenv')
   require('dotenv').config()
+  console.log('required dotenv')
  }
 
 module.exports = () => {};

@@ -9,10 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {
-    "dotenv": "^8.2.0"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "dotenv": "^8.2.0",
     "knex": "<0.20.0",
     "pg": "^8.2.1",
     "sqlite3": "latest",
