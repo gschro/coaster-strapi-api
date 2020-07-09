@@ -19,63 +19,15 @@
       "unique": true
     },
     "resort": {
-      "model": "resort",
-      "via": "parks"
-    },
-    "City": {
-      "type": "string"
-    },
-    "Metro": {
-      "type": "enumeration",
-      "enum": [
-        "DFW"
-      ]
-    },
-    "State": {
-      "type": "enumeration",
-      "enum": [
-        "California",
-        "Colorado",
-        "Indiana",
-        "Kentucky",
-        "Florida",
-        "Ohio",
-        "Pennsylvania",
-        "Michigan",
-        "Missouri",
-        "Texas",
-        "Tennessee",
-        "Utah"
-      ]
-    },
-    "Country": {
-      "type": "enumeration",
-      "enum": [
-        "Canada",
-        "USA"
-      ]
-    },
-    "Airport": {
-      "type": "enumeration",
-      "enum": [
-        "DFW",
-        "LAX"
-      ]
+      "via": "parks",
+      "model": "resort"
     },
     "parent_company": {
-      "model": "company",
-      "via": "parks"
+      "via": "parks",
+      "model": "company"
     },
     "MilitaryDiscount": {
       "type": "string"
-    },
-    "SoftDrinkVendor": {
-      "type": "enumeration",
-      "enum": [
-        "CocaCola",
-        "Other",
-        "Pepsi"
-      ]
     },
     "OutsideFood": {
       "type": "boolean"
@@ -85,6 +37,29 @@
     },
     "ParkMap": {
       "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "Metro": {
+      "type": "string"
+    },
+    "NearestAirport": {
+      "type": "string"
+    },
+    "Tags": {
+      "type": "json"
+    },
+    "attractions": {
+      "via": "park",
+      "collection": "attractions"
+    },
+    "Sources": {
+      "collection": "source",
+      "via": "related"
     }
   }
 }

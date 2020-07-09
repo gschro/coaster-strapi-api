@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "resorts",
+  "collectionName": "foods",
   "info": {
-    "name": "Resort"
+    "name": "Food"
   },
   "options": {
     "increments": true,
@@ -15,23 +15,13 @@
     "Slug": {
       "type": "string"
     },
-    "parks": {
-      "collection": "parks",
-      "via": "resort"
-    },
-    "City": {
+    "Type": {
       "type": "string"
     },
-    "State": {
+    "Url": {
       "type": "string"
     },
-    "Country": {
-      "type": "string"
-    },
-    "Metro": {
-      "type": "string"
-    },
-    "NearestAirport": {
+    "Cuisine": {
       "type": "string"
     },
     "Tags": {

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sources",
+  "info": {
+    "name": "Source"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Url": {
+      "type": "string"
+    },
+    "FactName": {
+      "type": "string"
+    },
+    "FactValue": {
+      "type": "string"
+    },
+    "FactParentId": {
+      "type": "string"
+    },
+    "related": {
+      "collection": "*",
+      "filter": "field"
+    }
+  }
+}

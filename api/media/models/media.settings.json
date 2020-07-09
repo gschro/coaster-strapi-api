@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "companies",
+  "collectionName": "media",
   "info": {
-    "name": "Company"
+    "name": "Media"
   },
   "options": {
     "increments": true,
@@ -12,16 +12,11 @@
     "Name": {
       "type": "string"
     },
-    "Website": {
+    "Slug": {
       "type": "string"
     },
-    "parks": {
-      "collection": "parks",
-      "via": "parent_company"
-    },
-    "attractions": {
-      "collection": "attractions",
-      "via": "manufacturer"
+    "Url": {
+      "type": "string"
     },
     "Type": {
       "type": "string"
