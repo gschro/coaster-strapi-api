@@ -2,23 +2,23 @@
   "kind": "collectionType",
   "collectionName": "media",
   "info": {
-    "name": "Media"
+    "name": "media"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     },
-    "Url": {
+    "url": {
       "type": "string"
     },
-    "Type": {
+    "type": {
       "type": "string"
     }
   }

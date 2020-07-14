@@ -2,17 +2,17 @@
   "kind": "collectionType",
   "collectionName": "companies",
   "info": {
-    "name": "Company"
+    "name": "company"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Website": {
+    "website": {
       "type": "string"
     },
     "parks": {
@@ -23,7 +23,7 @@
       "collection": "attractions",
       "via": "manufacturer"
     },
-    "Type": {
+    "type": {
       "type": "string"
     }
   }

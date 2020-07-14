@@ -2,56 +2,60 @@
   "kind": "collectionType",
   "collectionName": "attractions",
   "info": {
-    "name": "Attractions"
+    "name": "attractions"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     },
     "park": {
       "model": "parks",
       "via": "attractions"
     },
-    "Type": {
+    "type": {
       "type": "string"
     },
     "manufacturer": {
       "via": "attractions",
       "model": "company"
     },
-    "YearBuilt": {
+    "year_built": {
       "type": "integer"
     },
-    "OfficialUrl": {
+    "official_url": {
       "type": "string"
     },
     "povurl": {
       "type": "string"
     },
-    "Tags": {
+    "tags": {
       "type": "json"
     },
-    "Height": {
+    "height": {
       "type": "integer"
     },
-    "RideTime": {
+    "ride_time": {
       "type": "decimal"
     },
-    "Inversions": {
+    "inversions": {
       "type": "integer"
     },
-    "Subtype": {
+    "subtype": {
       "type": "string"
     },
-    "Sources": {
+    "sources": {
       "collection": "source",
+      "via": "related"
+    },
+    "section": {
+      "model": "section",
       "via": "related"
     }
   }

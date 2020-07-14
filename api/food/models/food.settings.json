@@ -2,29 +2,29 @@
   "kind": "collectionType",
   "collectionName": "foods",
   "info": {
-    "name": "Food"
+    "name": "food"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     },
-    "Type": {
+    "type": {
       "type": "string"
     },
-    "Url": {
+    "url": {
       "type": "string"
     },
-    "Cuisine": {
+    "cuisine": {
       "type": "string"
     },
-    "Tags": {
+    "tags": {
       "type": "json"
     }
   }

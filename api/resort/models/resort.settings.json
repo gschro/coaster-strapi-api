@@ -2,39 +2,39 @@
   "kind": "collectionType",
   "collectionName": "resorts",
   "info": {
-    "name": "Resort"
+    "name": "resort"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "string"
     },
     "parks": {
       "collection": "parks",
       "via": "resort"
     },
-    "City": {
+    "city": {
       "type": "string"
     },
-    "State": {
+    "state": {
       "type": "string"
     },
-    "Country": {
+    "country": {
       "type": "string"
     },
-    "Metro": {
+    "metro": {
       "type": "string"
     },
-    "NearestAirport": {
+    "nearest_airport": {
       "type": "string"
     },
-    "Tags": {
+    "tags": {
       "type": "json"
     }
   }

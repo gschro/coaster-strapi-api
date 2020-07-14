@@ -1,25 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "sources",
+  "collectionName": "sections",
   "info": {
-    "name": "source"
+    "name": "section"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "url": {
+    "name": {
       "type": "string"
     },
-    "fact_name": {
+    "theme": {
       "type": "string"
     },
-    "fact_value": {
-      "type": "string"
-    },
-    "fact_parent_id": {
-      "type": "string"
+    "park": {
+      "model": "parks",
+      "via": "sections"
     },
     "related": {
       "collection": "*",

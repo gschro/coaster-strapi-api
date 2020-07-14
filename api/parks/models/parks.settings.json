@@ -2,18 +2,18 @@
   "kind": "collectionType",
   "collectionName": "parks",
   "info": {
-    "name": "Parks"
+    "name": "parks"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Slug": {
+    "slug": {
       "type": "string",
       "required": true,
       "unique": true
@@ -26,40 +26,44 @@
       "via": "parks",
       "model": "company"
     },
-    "MilitaryDiscount": {
+    "military_discount": {
       "type": "string"
     },
-    "OutsideFood": {
+    "outside_food": {
       "type": "boolean"
     },
-    "Website": {
+    "website": {
       "type": "string"
     },
-    "ParkMap": {
+    "parkMap": {
       "type": "string"
     },
-    "City": {
+    "city": {
       "type": "string"
     },
-    "State": {
+    "state": {
       "type": "string"
     },
-    "Metro": {
+    "metro": {
       "type": "string"
     },
-    "NearestAirport": {
+    "nearest_airport": {
       "type": "string"
     },
-    "Tags": {
+    "tags": {
       "type": "json"
     },
     "attractions": {
       "via": "park",
       "collection": "attractions"
     },
-    "Sources": {
+    "sources": {
       "collection": "source",
       "via": "related"
+    },
+    "sections": {
+      "via": "park",
+      "collection": "section"
     }
   }
 }
