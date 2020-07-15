@@ -22,6 +22,10 @@
     "related": {
       "collection": "*",
       "filter": "field"
+    },
+    "attractions": {
+      "via": "section",
+      "collection": "attractions"
     }
   }
 }

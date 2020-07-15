@@ -23,8 +23,8 @@
       "type": "string"
     },
     "manufacturer": {
-      "via": "attractions",
-      "model": "company"
+      "model": "company",
+      "via": "attractions"
     },
     "year_built": {
       "type": "integer"
@@ -50,13 +50,15 @@
     "subtype": {
       "type": "string"
     },
-    "sources": {
-      "collection": "source",
-      "via": "related"
+    "theme": {
+      "type": "string"
+    },
+    "theme_url": {
+      "type": "string"
     },
     "section": {
       "model": "section",
-      "via": "related"
+      "via": "attractions"
     }
   }
 }

@@ -20,8 +20,8 @@
       "via": "parent_company"
     },
     "attractions": {
-      "collection": "attractions",
-      "via": "manufacturer"
+      "via": "manufacturer",
+      "collection": "attractions"
     },
     "type": {
       "type": "string"
