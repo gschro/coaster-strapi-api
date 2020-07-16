@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `food` model.
+ * Lifecycle callbacks for the `user-main` model.
  */
 
 module.exports = {

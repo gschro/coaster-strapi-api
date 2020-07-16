@@ -18,24 +18,29 @@
       "required": true,
       "unique": true
     },
+    "type": {
+      "type": "string"
+    },
     "resort": {
-      "via": "parks",
-      "model": "resort"
+      "model": "resort",
+      "via": "parks"
     },
     "parent_company": {
       "via": "parks",
       "model": "company"
     },
-    "military_discount": {
-      "type": "string"
+    "attractions": {
+      "via": "park",
+      "collection": "attractions"
     },
-    "outside_food": {
-      "type": "boolean"
+    "sections": {
+      "collection": "section",
+      "via": "park"
+    },
+    "theme": {
+      "type": "string"
     },
     "website": {
-      "type": "string"
-    },
-    "parkMap": {
       "type": "string"
     },
     "city": {
@@ -50,20 +55,17 @@
     "nearest_airport": {
       "type": "string"
     },
+    "military_discount": {
+      "type": "string"
+    },
+    "outside_food": {
+      "type": "boolean"
+    },
+    "park_map_url": {
+      "type": "string"
+    },
     "tags": {
       "type": "json"
-    },
-    "attractions": {
-      "via": "park",
-      "collection": "attractions"
-    },
-    "sources": {
-      "collection": "source",
-      "via": "related"
-    },
-    "sections": {
-      "via": "park",
-      "collection": "section"
     }
   }
 }

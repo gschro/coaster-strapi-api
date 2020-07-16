@@ -16,8 +16,8 @@
       "type": "string"
     },
     "park": {
-      "model": "parks",
-      "via": "sections"
+      "via": "sections",
+      "model": "parks"
     },
     "related": {
       "collection": "*",

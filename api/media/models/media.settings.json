@@ -12,13 +12,13 @@
     "name": {
       "type": "string"
     },
+    "type": {
+      "type": "string"
+    },
     "slug": {
       "type": "string"
     },
     "url": {
-      "type": "string"
-    },
-    "type": {
       "type": "string"
     }
   }

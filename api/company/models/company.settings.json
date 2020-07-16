@@ -12,6 +12,12 @@
     "name": {
       "type": "string"
     },
+    "official_name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
     "website": {
       "type": "string"
     },
@@ -23,8 +29,8 @@
       "via": "manufacturer",
       "collection": "attractions"
     },
-    "type": {
-      "type": "string"
+    "media": {
+      "collection": "media"
     }
   }
 }

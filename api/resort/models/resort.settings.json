@@ -16,8 +16,8 @@
       "type": "string"
     },
     "parks": {
-      "collection": "parks",
-      "via": "resort"
+      "via": "resort",
+      "collection": "parks"
     },
     "city": {
       "type": "string"

@@ -17,13 +17,6 @@
     },
     "fact_value": {
       "type": "string"
-    },
-    "fact_parent_id": {
-      "type": "string"
-    },
-    "related": {
-      "collection": "*",
-      "filter": "field"
     }
   }
 }

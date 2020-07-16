@@ -19,7 +19,21 @@
       "model": "parks",
       "via": "attractions"
     },
+    "section": {
+      "model": "section",
+      "via": "attractions"
+    },
     "type": {
+      "type": "string",
+      "required": true
+    },
+    "subtype": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "theme_url": {
       "type": "string"
     },
     "manufacturer": {
@@ -35,10 +49,13 @@
     "povurl": {
       "type": "string"
     },
-    "tags": {
-      "type": "json"
-    },
     "height": {
+      "type": "integer"
+    },
+    "length": {
+      "type": "integer"
+    },
+    "max_speed_mph": {
       "type": "integer"
     },
     "ride_time": {
@@ -47,18 +64,17 @@
     "inversions": {
       "type": "integer"
     },
-    "subtype": {
-      "type": "string"
+    "min_rider_height": {
+      "type": "decimal"
     },
-    "theme": {
-      "type": "string"
+    "max_rider_height": {
+      "type": "decimal"
     },
-    "theme_url": {
-      "type": "string"
+    "tags": {
+      "type": "json"
     },
-    "section": {
-      "model": "section",
-      "via": "attractions"
+    "sources": {
+      "collection": "source"
     }
   }
 }
