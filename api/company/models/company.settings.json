@@ -22,8 +22,8 @@
       "type": "string"
     },
     "parks": {
-      "collection": "parks",
-      "via": "parent_company"
+      "via": "parent_company",
+      "collection": "parks"
     },
     "attractions": {
       "via": "manufacturer",

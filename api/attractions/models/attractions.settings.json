@@ -16,8 +16,8 @@
       "type": "string"
     },
     "park": {
-      "model": "parks",
-      "via": "attractions"
+      "via": "attractions",
+      "model": "parks"
     },
     "section": {
       "model": "section",
@@ -52,7 +52,10 @@
     "height": {
       "type": "integer"
     },
-    "length": {
+    "ride_length": {
+      "type": "integer"
+    },
+    "ride_length_sec": {
       "type": "integer"
     },
     "max_speed_mph": {
@@ -69,6 +72,24 @@
     },
     "max_rider_height": {
       "type": "decimal"
+    },
+    "single_rider": {
+      "type": "boolean"
+    },
+    "line_skip": {
+      "type": "boolean"
+    },
+    "virtual_queue": {
+      "type": "boolean"
+    },
+    "price_per_ride": {
+      "type": "decimal"
+    },
+    "primary_color": {
+      "type": "string"
+    },
+    "secondary_color": {
+      "type": "string"
     },
     "tags": {
       "type": "json"

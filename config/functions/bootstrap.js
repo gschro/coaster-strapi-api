@@ -20,10 +20,6 @@
    process.env.DATABASE_HOST = host
    process.env.DATABASE_PORT = port
    process.env.DATABASE_NAME = database
- }
-
-if(process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
 }
 
 parseDatbaseUrl(process.env.DATABASE_URL)

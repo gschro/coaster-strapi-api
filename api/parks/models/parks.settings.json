@@ -26,12 +26,12 @@
       "via": "parks"
     },
     "parent_company": {
-      "via": "parks",
-      "model": "company"
+      "model": "company",
+      "via": "parks"
     },
     "attractions": {
-      "via": "park",
-      "collection": "attractions"
+      "collection": "attractions",
+      "via": "park"
     },
     "sections": {
       "collection": "section",
@@ -62,6 +62,36 @@
       "type": "boolean"
     },
     "park_map_url": {
+      "type": "string"
+    },
+    "single_rider": {
+      "type": "boolean"
+    },
+    "line_skip_name": {
+      "type": "string"
+    },
+    "line_skip_url": {
+      "type": "string"
+    },
+    "virtual_line_name": {
+      "type": "string"
+    },
+    "virtual_line": {
+      "type": "boolean"
+    },
+    "app_name": {
+      "type": "string"
+    },
+    "app_url": {
+      "type": "string"
+    },
+    "calendar_url": {
+      "type": "string"
+    },
+    "season_pass_url": {
+      "type": "string"
+    },
+    "parking_url": {
       "type": "string"
     },
     "tags": {
