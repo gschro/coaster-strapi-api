@@ -23,3 +23,15 @@ jobs:
       run: npm ci
     - name: Run tests
       run: npm run test
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+    - uses: actions/checkout@v2
+    - name: Add remote origin
+      run: |
+      git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
+    - name: Deploy to Heroku
+      run: |
+      git push heroku HEAD:master -f
