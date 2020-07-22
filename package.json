@@ -7,10 +7,13 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "test": "SET LOG_LEVEL=SILENT && npx jest __tests__"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "jest": "^26.1.0",
+    "jest-junit": "^11.0.1"
   },
   "dependencies": {
     "knex": "<0.20.0",
@@ -26,6 +29,9 @@
     "strapi-plugin-users-permissions": "3.0.6",
     "strapi-provider-upload-aws-s3-webp-optimized": "^3.0.3",
     "strapi-utils": "3.0.6"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": {
     "name": "A Strapi developer"
