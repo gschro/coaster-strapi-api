@@ -8,7 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "test": "SET LOG_LEVEL=SILENT && npx jest __tests__"
+    "test": "SET LOG_LEVEL=SILENT && npx jest __tests__",
+    "test-ci": "LOG_LEVEL=SILENT && npx jest __tests__"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
