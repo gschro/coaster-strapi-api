@@ -16,8 +16,8 @@
       "type": "string"
     },
     "park": {
-      "via": "attractions",
-      "model": "parks"
+      "model": "parks",
+      "via": "attractions"
     },
     "section": {
       "model": "section",
@@ -96,6 +96,19 @@
     },
     "sources": {
       "collection": "source"
+    },
+    "pov_creator": {
+      "model": "media",
+      "via": "attractions"
+    },
+    "has_clone": {
+      "type": "boolean"
+    },
+    "get_wet": {
+      "type": "boolean"
+    },
+    "indoor": {
+      "type": "boolean"
     }
   }
 }

@@ -30,8 +30,8 @@
       "via": "parks"
     },
     "attractions": {
-      "collection": "attractions",
-      "via": "park"
+      "via": "park",
+      "collection": "attractions"
     },
     "sections": {
       "collection": "section",

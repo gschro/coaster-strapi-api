@@ -20,6 +20,10 @@
     },
     "url": {
       "type": "string"
+    },
+    "attractions": {
+      "via": "pov_creator",
+      "collection": "attractions"
     }
   }
 }
