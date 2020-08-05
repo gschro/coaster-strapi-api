@@ -34,8 +34,8 @@
       "collection": "attractions"
     },
     "sections": {
-      "collection": "section",
-      "via": "park"
+      "via": "park",
+      "collection": "section"
     },
     "theme": {
       "type": "string"

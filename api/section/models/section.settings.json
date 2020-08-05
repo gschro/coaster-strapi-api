@@ -16,16 +16,15 @@
       "type": "string"
     },
     "park": {
-      "via": "sections",
-      "model": "parks"
-    },
-    "related": {
-      "collection": "*",
-      "filter": "field"
+      "model": "parks",
+      "via": "sections"
     },
     "attractions": {
-      "via": "section",
-      "collection": "attractions"
+      "collection": "attractions",
+      "via": "section"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
