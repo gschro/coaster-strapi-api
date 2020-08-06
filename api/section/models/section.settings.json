@@ -20,8 +20,8 @@
       "via": "sections"
     },
     "attractions": {
-      "collection": "attractions",
-      "via": "section"
+      "via": "section",
+      "collection": "attractions"
     },
     "slug": {
       "type": "string"

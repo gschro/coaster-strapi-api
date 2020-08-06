@@ -31,6 +31,10 @@
     },
     "media": {
       "collection": "media"
+    },
+    "povs": {
+      "via": "pov_creator",
+      "collection": "attractions"
     }
   }
 }

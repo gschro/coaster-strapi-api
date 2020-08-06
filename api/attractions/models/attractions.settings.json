@@ -20,8 +20,8 @@
       "via": "attractions"
     },
     "section": {
-      "via": "attractions",
-      "model": "section"
+      "model": "section",
+      "via": "attractions"
     },
     "type": {
       "type": "string",
@@ -97,10 +97,6 @@
     "sources": {
       "collection": "source"
     },
-    "pov_creator": {
-      "model": "media",
-      "via": "attractions"
-    },
     "has_clone": {
       "type": "boolean"
     },
@@ -109,6 +105,10 @@
     },
     "indoor": {
       "type": "boolean"
+    },
+    "pov_creator": {
+      "model": "company",
+      "via": "povs"
     }
   }
 }
