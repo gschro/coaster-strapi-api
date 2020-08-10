@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
     autoOpen: false,
     url: '/tycoon',
     auth: {
-      secret: env('JWT_SECRET'),
+      secret: env('ADMIN_JWT_SECRET'),
     },
   },
 });
