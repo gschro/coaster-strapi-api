@@ -37,8 +37,8 @@
       "type": "string"
     },
     "manufacturer": {
-      "model": "company",
-      "via": "attractions"
+      "via": "attractions",
+      "model": "company"
     },
     "year_built": {
       "type": "integer"
@@ -104,8 +104,8 @@
       "type": "boolean"
     },
     "pov_creator": {
-      "model": "company",
-      "via": "povs"
+      "via": "povs",
+      "model": "company"
     }
   }
 }

@@ -22,19 +22,24 @@
       "type": "string"
     },
     "parks": {
-      "via": "parent_company",
-      "collection": "parks"
+      "collection": "parks",
+      "via": "parent_company"
     },
     "attractions": {
-      "via": "manufacturer",
-      "collection": "attractions"
+      "collection": "attractions",
+      "via": "manufacturer"
     },
     "media": {
       "collection": "media"
     },
     "povs": {
-      "via": "pov_creator",
-      "collection": "attractions"
+      "collection": "attractions",
+      "via": "pov_creator"
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": true
     }
   }
 }
