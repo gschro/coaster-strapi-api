@@ -13,11 +13,12 @@
       "type": "string"
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "parks": {
-      "via": "resort",
-      "collection": "parks"
+      "collection": "parks",
+      "via": "resort"
     },
     "city": {
       "type": "string"

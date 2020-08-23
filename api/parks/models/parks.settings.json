@@ -22,8 +22,8 @@
       "type": "string"
     },
     "resort": {
-      "model": "resort",
-      "via": "parks"
+      "via": "parks",
+      "model": "resort"
     },
     "parent_company": {
       "model": "company",
