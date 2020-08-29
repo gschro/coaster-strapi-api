@@ -26,8 +26,8 @@
       "model": "resort"
     },
     "parent_company": {
-      "model": "company",
-      "via": "parks"
+      "via": "parks",
+      "model": "company"
     },
     "attractions": {
       "via": "park",
