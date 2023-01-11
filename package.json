@@ -17,7 +17,7 @@
     "jest-junit": "^11.0.1"
   },
   "dependencies": {
-    "knex": "<0.20.0",
+    "knex": "<2.5.0",
     "pg": "^8.2.1",
     "sqlite3": "latest",
     "strapi": "3.2.4",
